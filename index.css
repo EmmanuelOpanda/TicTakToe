@@ -1,0 +1,45 @@
+body {
+    margin: auto;
+    display: table;
+}
+
+.row-container {
+    display: flex;
+    position: relative;
+}
+
+.square {
+    border: 2px solid #d7c0c0;
+    padding: 40px;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 22px 0 rgba(0, 0, 0, 0.19);
+    font-size: 3em;
+}
+
+.title {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 3em;
+}
+
+body {
+    font-family: "Bitcount Prop Double Ink", system-ui;
+    background-color: aliceblue;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        padding: 20px;
+    }
+
+    .square {
+        width: 17px;
+        height: 17px;
+    }
+}
