@@ -3,6 +3,7 @@ let isGameOver = false;
 
 let player= 1;
 
+//I play here with code
 
 let board = [
 
