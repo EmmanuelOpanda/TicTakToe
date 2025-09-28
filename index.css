@@ -1,5 +1,15 @@
 body {
     margin: auto;
+    /* display: table; */
+    width: 100%;
+}
+
+h4 {
+    text-align: center;
+}
+
+.board-container {
+    margin: auto;
     display: table;
 }
 
@@ -29,7 +39,7 @@ body {
 }
 
 body {
-    font-family: "Bitcount Prop Double Ink", system-ui;
+    font-family: "Bitcount Prop Double Ink", system-ui !important;
     background-color: aliceblue;
 }
 
@@ -42,4 +52,25 @@ body {
         width: 17px;
         height: 17px;
     }
+}
+
+.dialog {
+    position: absolute;
+    top: 222px;
+    width: 60%;
+    height: 200px;
+    text-align: center;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.dialog>button {
+    padding: 10px 26px;
+    position: absolute;
+    bottom: 18px;
+    right: 41%;
+    background-color: #f0f8ff;
+    border: solid;
+    border: 1px solid green;
+    border-radius: 5px;
 }

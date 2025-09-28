@@ -14,29 +14,34 @@
 
 </head>
 
-<body>
+<body >
     <h1 style="cursor: pointer;" class="title">Tic -tak-toe</h1>
 
     <h4>player: <span class="player-ph">1</span></h4>
+    <div class="board-container">
 
-    <div class="row-container">
-        <div class="square c0" onclick="onCellClick(0)"></div>
-        <div class="square c1" onclick="onCellClick(1)"></div>
-        <div class="square c2" onclick="onCellClick(2)"></div>
+        <div class="row-container">
+            <div class="square c0" onclick="onCellClick(0)"></div>
+            <div class="square c1" onclick="onCellClick(1)"></div>
+            <div class="square c2" onclick="onCellClick(2)"></div>
+        </div>
+        <div class="row-container">
+            <div class="square c3" onclick="onCellClick(3)"></div>
+            <div class="square c4" onclick="onCellClick(4)"></div>
+            <div class="square c5" onclick="onCellClick(5)"></div>
+        </div>
+        <div class="row-container">
+            <div class="square c6" onclick="onCellClick(6)"></div>
+            <div class="square c7" onclick="onCellClick(7)"></div>
+            <div class="square c8" onclick="onCellClick(8)"></div>
+        </div>
     </div>
-    <div class="row-container">
-        <div class="square c3" onclick="onCellClick(3)"></div>
-        <div class="square c4" onclick="onCellClick(4)"></div>
-        <div class="square c5" onclick="onCellClick(5)"></div>
-    </div>
-    <div class="row-container">
-        <div class="square c6" onclick="onCellClick(6)"></div>
-        <div class="square c7" onclick="onCellClick(7)"></div>
-        <div class="square c8" onclick="onCellClick(8)"></div>
-    </div>
 
-
-
+    <dialog class="dialog">
+        <h2>Win!!!! &#129395;&#129395;&#129395;</h2>
+        <p>Player <span class="winner"></span> has Won! Congadulations!&#129321;</p>
+        <button onclick="myModal.close()">OK</button>
+    </dialog>
 
     <script src="index.js"></script>
 </body>

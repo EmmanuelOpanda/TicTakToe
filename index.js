@@ -1,11 +1,11 @@
 'use strict';
+
 let isGameOver = false;
 
-let player= 1;
+let player = 1;
 
 
 let board = [
-
     null, null, null,
     null, null, null,
     null, null, null
@@ -13,8 +13,9 @@ let board = [
 
 let isWinner = false;
 
+const myModal = document.querySelector('dialog')
+
 const checkWin = () => {
-    //  debugger
     if (
         board[0] === board[1] && board[1] === board[2] && board[0] !== null ||
         board[3] === board[4] && board[4] === board[5] && board[3] !== null ||
@@ -45,15 +46,15 @@ const onCellClick = (idx) => {
     document.querySelector(`.c${idx}`).innerHTML = board[idx];
 
     if (checkWin()) {
-        // alert('Win!!!!!');
         isGameOver = true;
         document.querySelectorAll('.square').forEach(element => {
             console.log(element)
             element.classList.add('animate__animated', 'animate__rotateIn');
-        });  
-    }
+        });
+        document.querySelector('.winner').innerHTML = player;
 
-    
+        myModal.show()
+    }
 
     if (player === 1) player = 2;
     else player = 1;
