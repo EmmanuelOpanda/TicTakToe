@@ -4,6 +4,7 @@ let isGameOver = false;
 
 let gameStarted = false;
 
+//I play here with code
 let startTime;
 let endTime;
 
