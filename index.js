@@ -4,7 +4,6 @@ let isGameOver = false;
 
 let gameStarted = false;
 
-//I play here with code
 let startTime;
 let endTime;
 
@@ -83,4 +82,30 @@ const onCellClick = (idx) => {
 
     document.querySelector(".player-ph").innerHTML = player;
 
+}
+
+const onReset = () => {
+
+    isGameOver = false;
+
+    gameStarted = false;
+
+    startTime;
+    endTime;
+
+    player = 1;
+    document.querySelector(".player-ph").innerHTML = player;
+
+    board = [
+        null, null, null,
+        null, null, null,
+        null, null, null
+    ];
+
+    isWinner = false;
+
+    document.querySelectorAll(".square").forEach(element =>{
+        element.innerHTML = null
+        
+    })
 }

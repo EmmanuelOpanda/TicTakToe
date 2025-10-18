@@ -14,10 +14,14 @@
 
 </head>
 
-<body >
+<body>
     <h1 style="cursor: pointer;" class="title">Tic -tak-toe</h1>
+    <div class="sub-title-container">
 
-    <h4>player: <span class="player-ph">1</span></h4>
+        <h4>player: <span class="player-ph">1</span></h4>
+
+        <button class="reset-btn" onclick="onReset()">Reset</button>
+    </div>
     <div class="board-container">
 
         <div class="row-container">
@@ -36,6 +40,8 @@
             <div class="square c8" onclick="onCellClick(8)"></div>
         </div>
     </div>
+
+
 
     <dialog class="dialog">
         <h2>Win!!!! &#129395;&#129395;&#129395;</h2>
